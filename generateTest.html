@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Generate Test</title>
+  
+</head>
+
+<body onload="generateTest()">
+  <header>
+    <h1>Here is the randomized test.</h1>
+  </header>
+
+  <main>
+    <h2>Insert test name.</h2>
+
+    <!-- this is the table that will display all of the saved test-->
+    <table id="testTable" style="width:70%">
+      <tr>
+        <th>Question Number</th>
+        <th>Question Upload</th>
+        <th>Answer Upload</th>
+        </th>
+      </tr>
+    </table>
+    <p id="Gtest"></p>
+    <script src="script.js"></script>
+    <button onclick="window.location.href = 'mainPage.html'">Back</button>
+    <button onclick="window.location.href = 'student.html'">Take Test</button>
+
+    <!-- this is the table that will display the generated test(random questions that coincide with the answers)-->
+
+    <!-- submit button to check test-->
+  </main>
+</body>
+
+</html>

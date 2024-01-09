@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Test Taking Page</title>
+</head>
+
+<body onload="showStudent()">
+  <!-- Centers the buttons -->
+  <div style="text-align: center;">
+    <!-- Header -->
+    <h1 id="lab">
+      You may begin your test.
+    </h1>
+
+    <table id="takeTable" style="width:70%">
+      <tr>
+        <th>Question Number</th>
+        <th>Question </th>
+        <th>Answer </th>
+        </th>
+      </tr>
+    </table>
+
+    <button onclick="score()" style="width:40%">Submit</button>
+    <button onclick="window.location.href='mainPage.html'" style="width:40%">Main</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

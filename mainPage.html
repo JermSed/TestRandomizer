@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Test Randomizer</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+
+</head>
+
+<body onload="createTable()">
+  <button onclick=" window.location.href='index.html'" style="width:35%; float:right">Welcome Page</button>
+  <h1>Enter your Quiz </h1>
+
+  <div id="popup" class="popup">
+    <p>Saved to Database!!!</p>
+  </div>
+
+  <table id="myTable" style="width:70%">
+    <tr>
+      <th>Question Number</th>
+      <th>Question Upload</th>
+      <th>Answer Upload</th>
+    </tr>
+  </table>
+
+  <!--input for how many questions are needed in the test-->
+  <script src="script.js"></script>
+  <div style="text-align: center;">
+    <h4></h4>
+    <label for="testLen"> Please enter the desired test length then press save: </label>
+    <h4></h4>
+    <input type="text" id="testLen" text-align:center style="width: 70%; height: 40;">
+    <!--buttons-->
+    <div style="text-align: center;">
+      <button onclick=" saveTableContents(); " id="saveButton" style="width:70%">Save to Database</button>
+      <button onclick="addRow()" style="width:35%">Add Row</button>
+      <button onclick="delRow()" style="width:35%">Delete Row</button>
+      <!-- <a style="width: 35%;">
+      Amount of questions in the test:
+    </a>
+    <input type="text" style="width: 35%;"> -->
+      <button onclick=" window.location.href='generateTest.html'; " style="width:35%">Generate
+        Test</button>
+      <button onclick="clearDatabase()" style="width:35%">Clear Database</button>
+    </div>
+
+</body>
+
+</html>
